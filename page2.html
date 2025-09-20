@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site MDP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+    background: #500b75;
+    }
+</style>
+<body>
+    <div class="d-flex align-items-center justify-content-center vh-100">
+        <div class="w-100 text-center">
+            <h1 class="text-light mb-4 mx-4">✨ Bravo ! Tu as trouvé le not de passe !!!🎉</h1>
+            <p class="text-light mx-4 fw-bold">
+                Écris moi un rapide résumé des moyens que tu as utilisé et ton raisonnement pour trouver le mot de passe.
+            </p>
+            <p class="text-light mx-4">
+                ⚠️ Merci de ne pas inclure d’informations personnelles, sensibles ou confidentielles dans ce message
+                <br>(ex. : numéro de téléphone, localisation, iformations sur des tiers, etc.).
+            </p>
+            <form action="https://formspree.io/f/mnnberqb" method="POST" onsubmit="return showConfirmation()"
+                class="mt-3 d-flex flex-column align-items-center">
+                <textarea name="message" placeholder="Écris ton message ici" required
+                    class="form-control mb-3 mx-4 rounded-4 shadow-sm px-3 py-2"
+                    style="max-width:400px; min-height:160px; resize:none; font-size:1.1rem;"></textarea>
+                <input type="hidden" name="_replyto" value="benjamin.ceano@gmail.com">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
